@@ -7,13 +7,15 @@
 //   2
 //   1
 
-function printReverse(num) {
-	var newArray = [num];
-	console.log(newArray);
-
-	// while the length of the array != 0 print each element
-	// find the list item in the array and print it
-	// decrement a value to get to the next index then print it
+function printReverse() {
+	var newArray = [5,2,8,9,2,6];
+	console.log("The Array is " + newArray.length + " items long");
+	var lastElem = 0;
+	for(i = newArray.length; i > 0; i--) {
+		lastElem = newArray.pop();
+		console.log(lastElem);
+		//console.log(newArray[i]);
+	}
 }
 
 
