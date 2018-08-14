@@ -33,21 +33,19 @@ function printReverse([num1, num2, num3, num4, num5]) {
 // isUniform(["b", "b", "b"]);  // returns true
 
 function isUniform(){
-	var newArray = [1,11,1,1,2];
+	var newArray = ["b", "b", "c"];
 	console.log("Here is your array: " + newArray);
-	var firstItem = newArray[0];
-	console.log("The first item is " + firstItem);
 	
-	for(i = 1; i <= newArray.length; i++) {
-		if(firstItem === newArray[i]) {
-			console.log("true");
-		}
-		else {
-			console.log("false");
-		}
+	var counter = 0;
+	var firstItem = newArray[0];
+	while(counter < newArray.length) {
+		// if newArray[0] === newArray[1]
+				// put newArray[1] into a variable
+		// if newArray[1] === newArray[2]
+				// put newArray[2] into a variable
+		// as soon as newArray[...] != newArray[...] the loop should close and return false
+		// otherwise, return true because we have reached the end of the array because all items matched
 	}
-
-
 }
 
 
