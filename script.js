@@ -7,9 +7,12 @@
 //   2
 //   1
 
-function printReverse() {
-	var newArray = [5,2,8,9,2,6];
-	console.log("The Array is " + newArray.length + " items long");
+// not sure if this is the riht way to do this since I'm accepting 5 arguments but only one array
+// would that count as one argument??
+function printReverse([num1, num2, num3, num4, num5]) {
+	var newArray = [num1, num2, num3, num4, num5];
+	console.log("The Array is " + newArray);
+	console.log("The Array in reverse is: ");
 	var lastElem = 0;
 	for(i = newArray.length; i > 0; i--) {
 		lastElem = newArray.pop();
@@ -17,8 +20,6 @@ function printReverse() {
 		//console.log(newArray[i]);
 	}
 }
-
-
 
 
 // ################################################
@@ -30,6 +31,27 @@ function printReverse() {
 // isUniform([2,1,1,1]);  // returns false
 // isUniform(["a", "b", "p"]);  // returns false
 // isUniform(["b", "b", "b"]);  // returns true
+
+function isUniform(){
+	var newArray = [1,11,1,1,2];
+	console.log("Here is your array: " + newArray);
+	var firstItem = newArray[0];
+	console.log("The first item is " + firstItem);
+	
+	for(i = 1; i <= newArray.length; i++) {
+		if(firstItem === newArray[i]) {
+			console.log("true");
+		}
+		else {
+			console.log("false");
+		}
+	}
+
+
+}
+
+
+
 
 // ################################################
 // sumArray()
