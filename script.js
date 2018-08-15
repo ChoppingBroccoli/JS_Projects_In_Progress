@@ -23,7 +23,6 @@ function printReverse([num1, num2, num3, num4, num5]) {
 
 
 // ################################################
-//isUniform()
 // function isUniform() takes an array as an argument and returns true if all elements in the array are identical
 // use a loop
 // put the first item in the array into a new variable then compare the other items in the array against the first item
@@ -32,14 +31,26 @@ function printReverse([num1, num2, num3, num4, num5]) {
 // isUniform(["a", "b", "p"]);  // returns false
 // isUniform(["b", "b", "b"]);  // returns true
 
+/* I will come back to this one. Cannot use return statements within the function since
+   return statements cause the function to stop immediately. Maybe I need to use a forEach??*/
 function isUniform(){
 	var newArray = ["b", "b", "c"];
 	console.log("Here is your array: " + newArray);
 	
 	var counter = 0;
-	var firstItem = newArray[0];
+	var newItem = 0;
+	var arrayItem = newArray[0];
 	while(counter < newArray.length) {
 		// if newArray[0] === newArray[1]
+		if (arrayItem === newArray[counter]) {
+			arrayItem = newArray[counter];
+			counter++;
+			console.log("Counter is: " + counter);
+			console.log("true");
+		}
+		else {
+			console.log("false");
+		}
 				// put newArray[1] into a variable
 		// if newArray[1] === newArray[2]
 				// put newArray[2] into a variable
@@ -57,6 +68,17 @@ function isUniform(){
 // sumArray([1,2,3]);  // returns 6
 // sumArray([10,3,10,4]);  // returns 27
 // sumArray([-5,100]);  // returns 95
+
+function sumArray([array]) {
+	// I need to find out how to accept an array as an argument to a function...
+	console.log("Here is the array you entered: " + array); // this doesn't work
+
+
+}
+
+
+
+
 
 // ################################################
 // max()
