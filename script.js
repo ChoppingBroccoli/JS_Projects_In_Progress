@@ -22,14 +22,16 @@ function printReverse([num1, num2, num3, num4, num5]) {
 }
 
 
-// ################################################
-// function isUniform() takes an array as an argument and returns true if all elements in the array are identical
-// use a loop
-// put the first item in the array into a new variable then compare the other items in the array against the first item
-// isUniform([1,1,1,1]);  // returns true
-// isUniform([2,1,1,1]);  // returns false
-// isUniform(["a", "b", "p"]);  // returns false
-// isUniform(["b", "b", "b"]);  // returns true
+/*
+ ################################################
+ function isUniform() takes an array as an argument and returns true if all 
+ elements in the array are identical use a loop put the first item in the array
+ into a new variable then compare the other items in the array against the 
+ first item
+ isUniform([1,1,1,1]);  // returns true
+ isUniform([2,1,1,1]);  // returns false
+ isUniform(["a", "b", "p"]);  // returns false
+ isUniform(["b", "b", "b"]);  // returns true */
 
 /* I will come back to this one. Cannot use return statements within the function since
    return statements cause the function to stop immediately. Maybe I need to use a forEach??*/
@@ -59,7 +61,11 @@ function isUniform(){
 	}
 }
 
-
+function testThis(...restAnything) {
+	console.log("Length " + restAnything.length);
+	console.log("Arguments entered: " + restAnything);
+	console.log("This is the 2nd index in the array: " + restAnything[1]);
+}
 
 
 // ################################################
